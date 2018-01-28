@@ -1,0 +1,551 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-light.woff2") format("woff2"), url("../fonts/Lato/Lato-light.woff") format("woff"), url("../fonts/Lato/Lato-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-lightItalic.woff2") format("woff2"), url("../fonts/Lato/Lato-lightItalic.woff") format("woff"), url("../fonts/Lato/Lato-lightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-regular.woff2") format("woff2"), url("../fonts/Lato/Lato-regular.woff") format("woff"), url("../fonts/Lato/Lato-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-regularItalic.woff2") format("woff2"), url("../fonts/Lato/Lato-regularItalic.woff") format("woff"), url("../fonts/Lato/Lato-regularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-bold.woff2") format("woff2"), url("../fonts/Lato/Lato-bold.woff") format("woff"), url("../fonts/Lato/Lato-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-black.woff2") format("woff2"), url("../fonts/Lato/Lato-black.woff") format("woff"), url("../fonts/Lato/Lato-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Lato';
+  color: #5a5a5a;
+  font-size: 1.4rem;
+  position: relative;
+  max-width: 192.0rem;
+  margin: 0 auto; }
+
+* {
+  box-sizing: border-box; }
+
+figure {
+  padding: 0;
+  padding: 0;
+  margin: 0; }
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  display: block; }
+
+input {
+  outline: none;
+  border: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1, h2, h3, p, blockquote {
+  margin: 0; }
+
+/*-------------------------------
+----- BOOSTRAP MARGIN AUTO ------
+-------------------------------*/
+.ml-auto {
+  margin-left: auto; }
+
+.mr-auto {
+  margin-right: auto; }
+
+.mt-auto {
+  margin-top: auto; }
+
+.mb-auto {
+  margin-bottom: auto; }
+
+/*-------------------------------
+-------- GENERAL STYLES ---------
+-------------------------------*/
+.overlay {
+  background-color: #f7941d;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0.35; }
+
+h2 {
+  margin-bottom: 3.5rem;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 3.8rem;
+  color: #5a5a5a;
+  line-height: 5.2rem; }
+  h2:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 20rem;
+    height: 0.2rem;
+    background-color: #ed145b; }
+
+p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 3rem; }
+
+main {
+  margin-top: -7rem; }
+
+button {
+  padding: 1.8rem 3rem;
+  min-width: 20rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #ed145b;
+  border-radius: 3.5rem; }
+
+/*-------------------------------
+------------ HEADER -------------
+-------------------------------*/
+header {
+  position: relative;
+  z-index: 999;
+  margin-top: 4rem; }
+  header a {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffffff; }
+    header a.selected {
+      color: #ed145b; }
+
+/*-------------------------------
+------------- HOME --------------
+-------------------------------*/
+.home {
+  padding-top: 28rem;
+  padding-bottom: 23rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/background.png);
+  text-align: center; }
+  .home h1 {
+    text-transform: uppercase;
+    font-size: 4.6rem;
+    font-weight: 300;
+    color: #ffffff; }
+    .home h1:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-top: 4rem;
+      width: 20rem;
+      height: 0.2rem;
+      background-color: #ed145b; }
+    .home h1 b {
+      font-weight: 900; }
+  .home p {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 3.8rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem; }
+  .home button {
+    margin: 0 auto; }
+
+/*-------------------------------
+------------ ABOUT --------------
+-------------------------------*/
+.about {
+  padding-top: 13rem;
+  padding-bottom: 15rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/MacBook-Pro.png), linear-gradient(to left, #f4f4f4, #f4f4f4);
+  background-size: 50%, 100% 83%;
+  background-repeat: no-repeat;
+  background-position: right center, top;
+  position: relative;
+  overflow: hidden; }
+  .about:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1.8rem;
+    width: 100%;
+    height: 3.6rem;
+    background-color: #ed145b;
+    transform: rotate(-1.25deg); }
+  .about h2:after {
+    margin-left: 0; }
+  .about p {
+    margin-bottom: 4rem; }
+  .about a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ed145b;
+    line-height: 3.7rem; }
+    .about a:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -0.4rem;
+      margin-left: 1rem;
+      width: 2.7rem;
+      height: 2.7rem;
+      border: 0.1rem solid #ed145b;
+      border-radius: 3.5rem;
+      background-image: url(../images/play.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+
+/*-------------------------------
+----------- SERVICES ------------
+-------------------------------*/
+.services {
+  padding-top: 0;
+  padding-bottom: 11.5rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  text-align: center; }
+  .services article p {
+    padding: 0 2.5rem; }
+  .services .service-item {
+    margin-top: 8rem; }
+    .services .service-item .icon {
+      margin: 0 auto;
+      width: 13rem;
+      height: 13rem;
+      border: 0.1rem solid #b3b3b3;
+      border-radius: 100%;
+      background-position: center;
+      background-repeat: no-repeat; }
+      .services .service-item .icon.editable {
+        background-image: url(../images/services/editable.png); }
+      .services .service-item .icon.free-download {
+        background-image: url(../images/services/download.png); }
+      .services .service-item .icon.design {
+        background-image: url(../images/services/design.png); }
+      .services .service-item .icon.responsive {
+        background-image: url(../images/services/responsive.png); }
+    .services .service-item p {
+      color: #ed145b;
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 2.4rem; }
+
+/*-------------------------------
+------------ QUOTES -------------
+-------------------------------*/
+.quotes {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/background.png);
+  text-align: center; }
+  .quotes .arrow {
+    min-width: 0;
+    height: 3.3rem;
+    background-color: transparent;
+    background-image: url(../images/arrow_left.png);
+    background-position: center;
+    background-repeat: no-repeat; }
+    .quotes .arrow.arr-right {
+      transform: scaleX(-1); }
+  .quotes blockquote {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding: 0 7.5rem; }
+    .quotes blockquote:before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-bottom: 3rem;
+      width: 6.2rem;
+      height: 5rem;
+      background-image: url(../images/quote_open.png); }
+    .quotes blockquote:after {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-top: 3rem;
+      width: 6.2rem;
+      height: 5rem;
+      background-image: url(../images/quote_open.png);
+      transform: scale(-1); }
+
+/*-------------------------------
+------------ PRICES -------------
+-------------------------------*/
+.prices {
+  padding-top: 13.5rem;
+  padding-bottom: 13.5rem;
+  background-color: #f4f4f4;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  text-align: center; }
+  .prices article p {
+    padding: 0 2.5rem; }
+  .prices .price-item {
+    margin-top: 8.5rem;
+    background-color: #ffffff;
+    border: 0.1rem solid transparent; }
+    .prices .price-item .cost {
+      padding-top: 2.5rem;
+      padding-bottom: 5rem;
+      background-color: #5a5a5a;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #ffffff; }
+      .prices .price-item .cost span {
+        display: block;
+        font-size: 5rem; }
+        .prices .price-item .cost span:before {
+          content: '$';
+          font-size: 2rem;
+          margin-right: 0.5rem; }
+      .prices .price-item .cost.special {
+        background-color: #ed145b; }
+    .prices .price-item .rate {
+      margin: 0 auto;
+      margin-top: -2.5rem;
+      padding: 1.8rem 3rem;
+      width: 20rem;
+      color: #5a5a5a;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-color: #f4f4f4;
+      border-radius: 3.5rem; }
+    .prices .price-item ul {
+      list-style-type: none;
+      line-height: 3.8rem;
+      padding: 0;
+      font-size: 1.5rem;
+      color: #5a5a5a; }
+    .prices .price-item button {
+      margin: 0 auto;
+      margin-top: 2rem;
+      margin-bottom: 3.5rem; }
+
+/*-------------------------------
+-------- ADITIONAL INFO ---------
+-------------------------------*/
+.aditional-info {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  .aditional-info .info-item {
+    margin: 3.5rem 0; }
+    .aditional-info .info-item .icon {
+      width: 16.5rem;
+      height: 6.5rem;
+      margin-right: 2.5rem;
+      background-repeat: no-repeat;
+      background-position: left top; }
+      .aditional-info .info-item .icon.resolution {
+        background-image: url(../images/info/resolution.png); }
+      .aditional-info .info-item .icon.photography {
+        background-image: url(../images/info/photography.png); }
+      .aditional-info .info-item .icon.customize {
+        background-image: url(../images/info/customize.png); }
+      .aditional-info .info-item .icon.support {
+        background-image: url(../images/info/support.png); }
+      .aditional-info .info-item .icon.theme {
+        background-image: url(../images/info/theme.png); }
+      .aditional-info .info-item .icon.optimization {
+        background-image: url(../images/info/optimization.png); }
+    .aditional-info .info-item h3 {
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #ed145b;
+      font-size: 1.5rem;
+      margin-bottom: 2rem; }
+
+/*-------------------------------
+------------ BANNER -------------
+-------------------------------*/
+.banner {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  background-color: #ed145b;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  text-transform: uppercase;
+  color: #ffffff; }
+  .banner p {
+    font-size: 3.8rem;
+    line-height: 5.2rem; }
+  .banner button {
+    margin-right: 0;
+    background-color: #ffffff;
+    color: #ed145b; }
+
+/*-------------------------------
+------------- NEWS --------------
+-------------------------------*/
+.news {
+  padding-top: 13.5rem;
+  padding-bottom: 6rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%; }
+  .news h2 {
+    text-align: center; }
+  .news .news-item {
+    margin-top: 8rem;
+    background-color: #f4f4f4; }
+    .news .news-item .photo {
+      position: relative;
+      overflow: hidden;
+      height: 25.2rem; }
+      .news .news-item .photo:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1.1rem;
+        bottom: -0.75rem;
+        background-color: #ed145b;
+        transform: rotate(1.25deg); }
+      .news .news-item .photo:hover:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(237, 20, 91, 0.85);
+        background-image: url(../images/news/zoom.png);
+        background-repeat: no-repeat;
+        background-position: center; }
+      .news .news-item .photo img {
+        width: 115%; }
+    .news .news-item h3 {
+      padding: 2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.5rem; }
+    .news .news-item p {
+      padding: 2rem;
+      padding-top: 0; }
+  .news a {
+    display: inline-block;
+    margin-top: 11rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #ed145b; }
+    .news a:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-top: 0.5rem;
+      width: 1.7rem;
+      height: 0.8rem;
+      background-image: url(../images/arrow_down.png); }
+
+/*-------------------------------
+------- ADITIONAL INFO 2 --------
+-------------------------------*/
+.aditional-info-2 {
+  padding-top: 14rem;
+  padding-bottom: 14.5rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/background.png);
+  text-align: center; }
+  .aditional-info-2 h2, .aditional-info-2 p {
+    color: #ffffff;
+    padding: 0 3.9rem; }
+  .aditional-info-2 button {
+    margin: 0 auto;
+    margin-top: 5rem; }
+
+/*-------------------------------
+----------- DOWNLOAD ------------
+-------------------------------*/
+.download {
+  padding-top: 12.5rem;
+  padding-bottom: 16.5rem;
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  background-image: url(../images/Safari-Browser.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  position: relative;
+  overflow: hidden; }
+  .download h2:after {
+    margin-left: 0; }
+  .download p {
+    margin-bottom: 5rem;
+    padding-right: 10rem; }
+
+/*-------------------------------
+------------ FOOTER -------------
+-------------------------------*/
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2b2b2b;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase; }
+  footer p:last-child {
+    font-size: 1.6rem; }
+  footer p span {
+    font-size: 4rem;
+    color: #ed145b; }
