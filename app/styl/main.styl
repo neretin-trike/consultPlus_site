@@ -1,5 +1,6 @@
 html
     font-size 62.5%
+    box-sizing border-box
 
 body
     font-family 'Lato'
@@ -9,15 +10,13 @@ body
     position relative
     max-width 192.0rem 
     margin 0 auto
+    background: red
 
 *
-    box-sizing border-box
+*::before
+*::after 
+    box-sizing: inherit
     // border 0.1rem solid #a2a1bf 
-
-figure
-    padding 0
-    padding 0
-    margin 0
 
 button
     outline none
@@ -38,7 +37,7 @@ a
 
 
 h1, h2, h3, p, blockquote
-    margin 0
+    reset()
 
 /*-------------------------------
 -------- GENERAL STYLES ---------
