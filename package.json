@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:prod": "webpack -p",
-    "build": "webpack-dev-server --entry ./app/js/index.js --output-filename app/js/bundle.js",
-    "watch": "webpack --watch"
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --inline --hot"
   },
   "author": "TRIKE",
   "license": "ISC",
@@ -17,6 +17,7 @@
     "style-loader": "^0.20.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
+    "through2": "^2.0.3",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"
   },

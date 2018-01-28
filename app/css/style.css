@@ -1,57 +1,3 @@
-@font-face {
-  font-family: 'Lato-thin';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-extralight';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-light';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-regular';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-medium';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-semibold';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-bold';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-extrabold';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato-black';
-  src: url("../fonts/{fontName}/{urlName}.woff2") format("woff2"), url("../fonts/{fontName}/{urlName}.woff") format("woff"), url("../fonts/{fontName}/{urlName}.ttf") format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -63,7 +9,7 @@ body {
   position: relative;
   max-width: 192rem;
   margin: 0 auto;
-  background: #f00;
+  background: #008000;
 }
 *,
 *::before,
