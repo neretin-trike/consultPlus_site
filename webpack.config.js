@@ -43,12 +43,16 @@ module.exports = {
             //             }
             //           ]
             //     })
-            loader: 'style-loader!css-loader!stylus-loader?resolve url'
+            loader: 'style-loader!css-loader!stylus-loader'
         },
         { 
           test: /\.html$/, 
           loader: "html-loader" 
         },
+        {
+          test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
+          loader: 'file-loader?name=app/js/[name].[ext]'
+        }
     ]
   },
   plugins: plugins,

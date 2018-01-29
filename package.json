@@ -12,16 +12,16 @@
   "author": "TRIKE",
   "license": "ISC",
   "devDependencies": {
+    "bower": "^1.8.2",
     "css-loader": "^0.28.9",
     "extract-text-webpack-plugin": "^3.0.2",
-    "reload-html-webpack-plugin": "^0.1.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
     "style-loader": "^0.20.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1",
-    "webpack-shell-plugin": "^0.5.0",
-    "bower": "^1.8.2",
-    "html-loader": "^0.5.5"
+    "webpack-shell-plugin": "^0.5.0"
   }
 }
