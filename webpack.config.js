@@ -2,6 +2,15 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var WebpackShellPlugin = require('webpack-shell-plugin');
+var plugins = [];
+
+plugins.push(
+  new WebpackShellPlugin({
+    onBuildEnd: ['ruby haml-watch.rb app/pages ./']
+  }),
+);
+
 module.exports = {
   entry: ['./index.js'],
   output: {
@@ -34,9 +43,18 @@ module.exports = {
             //           ]
             //     })
             loader: 'style-loader!css-loader!stylus-loader?resolve url'
-        }
+        },
+        { 
+          test: /\.haml$/, 
+          loader: "haml-haml-loader" 
+        },
+        { 
+          test: /\.html$/, 
+          loader: "html-loader" 
+        },
     ]
   },
+  plugins: plugins,
   devServer:{
   }
 }
