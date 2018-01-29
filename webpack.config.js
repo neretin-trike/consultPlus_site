@@ -9,7 +9,7 @@ plugins.push(
   new WebpackShellPlugin({
     onBuildEnd: ['ruby haml-watch.rb app/pages ./']
   }),
-  new webpack.HotModuleReplacementPlugin(),
+  new webpack.HotModuleReplacementPlugin()
 );
 
 module.exports = {
