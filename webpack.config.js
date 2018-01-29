@@ -9,6 +9,7 @@ plugins.push(
   new WebpackShellPlugin({
     onBuildEnd: ['ruby haml-watch.rb app/pages ./']
   }),
+  new webpack.HotModuleReplacementPlugin(),
 );
 
 module.exports = {
@@ -43,10 +44,6 @@ module.exports = {
             //           ]
             //     })
             loader: 'style-loader!css-loader!stylus-loader?resolve url'
-        },
-        { 
-          test: /\.haml$/, 
-          loader: "haml-haml-loader" 
         },
         { 
           test: /\.html$/, 

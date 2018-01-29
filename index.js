@@ -1,5 +1,5 @@
 import './app/styl/style.styl';
-import './app/pages/index.haml';
+// import './app/pages/index.haml';
 import './app/index.html';
 
 // var through = require('through2');
