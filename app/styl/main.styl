@@ -16,7 +16,7 @@ body
 *:before
 *:after 
     box-sizing: inherit
-    // border 0.1rem solid #a2a1bf 
+    border 0.1rem solid #a2a1bf 
 
 button
     outline none
@@ -66,6 +66,8 @@ button
     background-color color-green
 
     border-radius small-border-radius
+
+    margin 0 auto
 
 main
     margin-top -13rem
@@ -148,7 +150,7 @@ header
         .phone
             display inline-block
             padding-left 3rem
-            margin-right 2.5rem           
+            margin-right 5rem           
 
             background-image url(/app/images/phone.png)
             background-repeat no-repeat
@@ -400,4 +402,35 @@ header
             h3, p
                 text-align left 
             
-        
+/*-------------------------------
+----------- SERVICES ------------
+-------------------------------*/
+
+.services
+    base-markup-for-pages(9rem,9rem,#fffaf3)
+    
+    .service-item
+        margin-top 5rem
+        margin-bottom 4rem
+
+        .icon
+            margin-bottom 2rem
+
+            width 4.5rem
+            height 4.5rem
+            background-repeat no-repeat
+            background-position center
+
+            &.business
+                background-image url(/app/images/services/business.png)
+            &.boost
+                background-image url(/app/images/services/boost.png)
+            &.accounting
+                background-image url(/app/images/services/accounting.png)
+
+        h3
+            text-transform uppercase
+            font-size 1.8rem
+            margin-bottom 1rem
+        p
+            text-align left
