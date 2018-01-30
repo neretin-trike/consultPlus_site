@@ -51,7 +51,7 @@
                         %h2 About us
                         %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
                         %button Read more
-                .grid(class='grid--center grid--middle')
+                .grid(class='grid--center grid--middle grid--flush')
                     %button(class='1/12 grid__cell arrow left')
                     .sponsors(class='10/12 grid__cell')
                         - sponsor_array = ['codecanyon', 'videohive', 'audiojungle', 'graphicriver','photodune'];
@@ -68,32 +68,32 @@
                 .grid(class='grid--center')
                     %article(class='8/12 grid__cell')
                         %h2 Our features
-                .grid
-                    %div(class='5/12 grid__cell')
-                        .grid.feature-item
-                            .description(class='9/12 grid__cell')
+                .grid(class='grid--middle grid--flush')
+                    %div(class='5/12 grid__cell left')
+                        .grid.feature-item(class='grid--flush')
+                            .description(class='10/12 grid__cell')
                                 %h3 24 hour support
                                 %p containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
-                            .icon.support(class='3/12 grid__cell') support
-                        .grid.feature-item
-                            .description(class='9/12 grid__cell')
+                            .icon.support(class='2/12 grid__cell') 
+                        .grid.feature-item(class='grid--flush')
+                            .description(class='10/12 grid__cell')
                                 %h3 Full security
                                 %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            .icon.security(class='3/12 grid__cell') security
-                    %div(class='2/12 grid__cell')
-                        %img(src="" alt="") image
-                    %div(class='5/12 grid__cell')
-                        .grid.feature-item
-                            .icon.boosting(class='3/12 grid__cell') boosting
-                            .description(class='9/12 grid__cell')
+                            .icon.security(class='2/12 grid__cell') 
+                    %div(class='2/12 grid__cell logo')
+                        %img(src="images/features/logo_icon.png" alt="")
+                    %div(class='5/12 grid__cell right')
+                        .grid.feature-item(class='grid--flush')
+                            .icon.boosting(class='2/12 grid__cell') 
+                            .description(class='10/12 grid__cell')
                                 %h3 Business boosting
                                 %p established fact that a reader will be distracted by the readable content of a page when looking
-                        .grid.feature-item
-                            .icon.process(class='3/12 grid__cell') process
-                            .description(class='9/12 grid__cell')
+                        .grid.feature-item(class='grid--flush')
+                            .icon.process(class='2/12 grid__cell') 
+                            .description(class='10/12 grid__cell')
                                 %h3 Creative process
                                 %p There are many variations of passages of Ipsum avail able, but the majority have suffered alteration.
-                .grid.boost(class='grid--middle')
+                .grid.boost(class='grid--middle grid--flush')
                     %div(class='9/12 grid__cell') 
                         %p If you want to boost your business Contact us
                     %div(class='3/12 grid__cell') 

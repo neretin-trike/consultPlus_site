@@ -16,7 +16,7 @@ body
 *:before
 *:after 
     box-sizing: inherit
-    border 0.1rem solid #a2a1bf 
+    // border 0.1rem solid #a2a1bf 
 
 button
     outline none
@@ -244,7 +244,7 @@ header
         a
             display inline-block
             height 5rem
-            min-width 18rem
+            min-width 18.5rem
             vertical-align middle
             padding 0 1.2rem
 
@@ -275,3 +275,59 @@ header
             transform scaleX(-1)
             margin-right 0
 
+/*-------------------------------
+----------- FEATURES ------------
+-------------------------------*/
+
+.features
+    base-markup-for-pages(8.5rem,0,#e7eff1)
+    
+    .logo
+        padding 0
+
+    .feature-item
+        margin-top 5.5rem
+
+        .icon
+            height 4rem
+
+            background-repeat no-repeat
+            background-position center
+
+            &.support
+                background-image url(/app/images/features/support.png)
+            &.security
+                background-image url(/app/images/features/security.png)
+            &.boosting
+                background-image url(/app/images/features/boosting.png)  
+            &.process
+                background-image url(/app/images/features/process.png)
+
+        .description
+            padding 0
+
+    h3
+        margin-bottom 1.4rem
+
+    .left
+        padding-right 0
+        h3, p
+            text-align right !important
+    .right
+        padding-left 0
+        h3, p
+            text-align left !important
+
+
+    .boost
+        base-markup-for-pages(1.6rem,1.6rem,color-gray)
+        margin-top 9rem
+
+        p
+            text-align left
+            font-size 2rem
+            color color-white
+            margin-left 1.5rem
+
+        button
+            margin 0 auto
