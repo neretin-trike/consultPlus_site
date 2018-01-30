@@ -551,3 +551,47 @@ header
                 margin-bottom 2rem
             p
                 text-align left
+
+/*-------------------------------
+------------ CONTACT -------------
+-------------------------------*/
+
+.contact
+    base-markup-for-pages(9rem,8rem)
+
+    .contact-item
+        border 0.1rem solid #e1eaec
+        margin 2rem 0
+
+        padding 3.5rem
+
+        .icon
+            height 6rem
+
+            background-repeat no-repeat
+            background-position center
+
+            &.email
+                background-image url(/app/images/contact/email.png)
+            &.call
+                background-image url(/app/images/contact/call.png)
+            &.career
+                background-image url(/app/images/contact/career.png)
+
+        .info
+            padding-left 2.5rem
+
+            h3
+                font-size 1.8rem
+                text-transform uppercase
+            p
+                text-align left
+                color color-gray
+                font-size 1.8rem
+
+/*-------------------------------
+------------ FOOTER -------------
+-------------------------------*/
+
+footer
+    base-markup-for-pages(9rem,5rem,color-darkgray)

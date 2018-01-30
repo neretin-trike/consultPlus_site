@@ -191,22 +191,22 @@
                 .grid(class='grid--center')
                     %article(class='8/12 grid__cell')
                         %h2 Quick contact
-                .grid
+                .grid(class='grid--flush')
                     %div(class='4/12 grid__cell')
-                        .grid.contact-item
-                            .icon.email(class='3/12 grid__cell') email
+                        .grid.contact-item(class='grid--flush')
+                            .icon.email(class='3/12 grid__cell')
                             .info(class='9/12 grid__cell')
                                 %h3 Email
                                 %p info@consultplus.com
                     %div(class='4/12 grid__cell')
-                        .grid.contact-item
-                            .icon.call(class='3/12 grid__cell') Call us
+                        .grid.contact-item(class='grid--flush')
+                            .icon.call(class='3/12 grid__cell')
                             .info(class='9/12 grid__cell')
                                 %h3 Call us
                                 %p +91 8879 8767 990
                     %div(class='4/12 grid__cell')
-                        .grid.contact-item
-                            .icon.career(class='3/12 grid__cell') Career
+                        .grid.contact-item(class='grid--flush')
+                            .icon.career(class='3/12 grid__cell')
                             .info(class='9/12 grid__cell')
                                 %h3 Career
                                 %p consult@career.com
@@ -234,11 +234,11 @@
                     %form(action="#")
                         %input(type="text" placeholder="Email addres")/
                         %input(type="button" value="subscribe")/
-        .grid
-            .copyright(class='6/12 grid__cell')
-                %p Copyright © 2016 Consultplus theme.
-            .social-media(class='6/12 grid__cell')
-                - link_array = ['Facebook', 'Twitter', 'Instagram', 'Linkedin','Google +'];
-                - link_array.each do |item|
-                    %a(class='#{item}' href='#') #{item}
+            .grid
+                .copyright(class='6/12 grid__cell')
+                    %p Copyright © 2016 Consultplus theme.
+                .social-media(class='6/12 grid__cell')
+                    - link_array = ['Facebook', 'Twitter', 'Instagram', 'Linkedin','Google +'];
+                    - link_array.each do |item|
+                        %a(class='#{item}' href='#') #{item}
         %script(src="js/bundle.js")
