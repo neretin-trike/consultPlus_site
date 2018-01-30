@@ -7,9 +7,9 @@
         %link(rel="stylesheet" href="css/avalanche.css")/
         %title Consult Plus Site
     %body
-        %header.grid
+        %header.grid(class='grid--middle')
             .logo(class='2/12 grid__cell')
-                %img(src="" alt="") logo
+                %img(src="images/logo.png" alt="")
             %nav.menu(class='7/12 grid__cell')
                 - menu_array = ['Home', 'About Us', 'Industry', 'Services','Pages','Contact us'];
                 - menu_array.each_with_index do |item, index|
@@ -17,9 +17,10 @@
                         %a(href='#' class='selected') #{item}
                     - else 
                         %a(href='#') #{item}
+                .helper
             .contact(class='3/12 grid__cell')
                 %p +91 5685 6664 555
-                %a(href="#") home
+                %a(href="#")
         %main
             %section.home
                 .grid(class='grid--center')
