@@ -23,11 +23,11 @@
                 %a(href="#")
         %main
             %section.home
-                .grid(class='grid--center')
-                    %article(class='6/12 grid__cell')
+                .grid(class='grid--center grid--flush')
+                    %article(class='8/12 grid__cell')
                         %p We are leading consulting company
                         %h1 Choose your industry
-                .grid
+                .grid(class='grid--flush')
                     :ruby
                         industry_item = [
                             {'icon' => 'education', 'header' => 'education'},
@@ -36,14 +36,15 @@
                             {'icon' => 'banking', 'header' => 'banking'}
                         ]
                     - industry_item.each do |item|
-                        .industry-item(class='3/12 grid__cell')
-                            .icon(class="#{item['icon']}") icon
-                            %p #{item['header']}
+                        %div(class='3/12 grid__cell')
+                            .industry-item
+                                .icon(class="#{item['icon']}")
+                                %p #{item['header']}
                 .grid(class='grid--center')
                     %nav(class='2/12 grid__cell')
-                        %a(href="#")1
-                        %a(href="#")2
-                        %a(href="#")3
+                        %a(href="#")
+                        %a(href="#")
+                        %a(href="#")
             %section.about
                 .grid(class='grid--center')
                     %article(class='8/12 grid__cell')

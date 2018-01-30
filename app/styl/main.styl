@@ -13,8 +13,8 @@ body
     background color-white
 
 *
-*::before
-*::after 
+*:before
+*:after 
     box-sizing: inherit
     border 0.1rem solid #a2a1bf 
 
@@ -67,8 +67,6 @@ main
 
 .grid  
     max-width 117rem
-    padding-left 1.5rem
-    padding-right 1.5rem
     margin-left auto
     margin-right auto
     &__cell
@@ -135,4 +133,79 @@ header
 -------------------------------*/
 
 .home
-    base-markup-for-pages(23rem,7rem, black)
+    base-markup-for-pages(23rem,7rem,,'/app/images/background.png')
+    text-align center
+    color color-white
+
+    article
+        margin-bottom 4rem
+
+        text-transform uppercase
+        text-align center !important
+
+        p
+            font-size 1.6rem
+        h1
+            font-size 4.8rem
+    
+    .industry-item
+        background-color color-blue
+
+        padding-top 8rem
+        padding-bottom 8.5rem 
+
+        margin-bottom 10rem
+
+        font-weight font-weight-bold
+        font-size 2rem
+        text-transform uppercase
+
+        &:hover
+            background-color color-orange
+
+        .icon
+            width 7rem
+            height 7rem
+            margin 0 auto
+            margin-bottom 2rem
+
+            background-position center
+            background-repeat no-repeat
+
+            &.education
+                background-image url(/app/images/industry/education.png)
+            &.business
+                background-image url(/app/images/industry/business.png)
+            &.technology
+                background-image url(/app/images/industry/technology.png)
+            &.banking
+                background-image url(/app/images/industry/banking.png)
+    nav
+        text-align center !important
+        a
+            display inline-block
+            width 1.6rem
+            height 1.6rem
+            
+            margin 0 0.35rem
+
+            border 0.2rem solid color-green
+            border-radius big-border-radius
+
+            position relative
+            
+            &::after
+                content ''
+                display block
+                position absolute
+                left 0 
+                right 0
+                bottom 0
+                top 0
+                margin auto
+
+                width 0.4rem
+                height 0.4rem
+
+                border 0.2rem solid color-green
+                border-radius big-border-radius
