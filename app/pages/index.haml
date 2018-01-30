@@ -169,20 +169,24 @@
                         %h2 Our blog
                 .grid(class='grid--flush')
                     %div(class='6/12 grid__cell')
-                        .blog-item
-                            .grid
+                        .blog-item.left
+                            .grid(class='grid--flush')
                                 .photo(class='4/12 grid__cell')
-                                    %img(src="" alt="") photo
-                                .description(class='8/12 grid__cell')
-                                    %time February 22, 2016 
-                                    %h3 Blog Heading here
-                                    %p Established fact that a reader will be distracted by the readable of a page when looking at its layout...
+                                    %img(src="images/blog/photo_1.png" alt="")
+                                %div(class='8/12 grid__cell')
+                                    .description
+                                        %time February 22, 2016 
+                                        %h3 Blog Heading here
+                                        %p Established fact that a reader will be distracted by the readable of a page when looking at its layout...
                     %div(class='6/12 grid__cell')
-                        .blog-item
-                            .description(class='grid__cell')
+                        .blog-item.right
+                            .description
                                 %time February 22, 2016 
                                 %h3 Blog Heading here
                                 %p Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages. fact that a reader will be distracted by the readable of a page when...
+                .grid(class='grid--center')
+                    %div(class='3/12 grid__cell')
+                        %button Full blog 
             %section.contact
                 .grid(class='grid--center')
                     %article(class='8/12 grid__cell')
