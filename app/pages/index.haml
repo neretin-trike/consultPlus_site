@@ -41,8 +41,8 @@
                                 .icon(class="#{item['icon']}")
                                 .title #{item['header']}
                 .grid(class='grid--center')
-                    %nav(class='2/12 grid__cell')
-                        %a(href="#")
+                    %nav(class='circle-switcher 2/12 grid__cell')
+                        %a(class='selected' href="#")
                         %a(href="#")
                         %a(href="#")
             %section.about
@@ -102,22 +102,24 @@
                 .grid(class='grid--center')
                     %article(class='8/12 grid__cell')
                         %h2 Projects
-                .grid
+                .grid(class='grid--flush')
                     %article(class='4/12 grid__cell')
                         .project-item.banking 
                             .photo
-                                %img(src="" alt="")
+                                %img(src="images/projects/image_1.png" alt="")
+                                .title Banking
                             .description
                                 %h3 Project Heading 
                                 %p Popularised in the 1960s with the release Letraset sheets containing Lorem. 
                     %article(class='8/12 grid__cell')
                         .project-item.realstate 
                             .photo
-                                %img(src="" alt="")
-                                %nav
-                                    %a(href="#")1
-                                    %a(href="#")2
-                                    %a(href="#")3
+                                %img(src="images/projects/image_2.png" alt="")
+                                .title Real Estate
+                                %nav(class='circle-switcher')
+                                    %a(class='selected' href="#")
+                                    %a(href="#")
+                                    %a(href="#")
                             .description
                                 %h3 Project Heading
                                 %p Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages. fact that a reader will be distracted by the readable of a page when.     

@@ -84,6 +84,38 @@ p
     &__cell
         font-size 1.4rem
 
+.circle-switcher
+    text-align center !important
+    a
+        display inline-block
+        width 1.6rem
+        height 1.6rem
+        
+        margin 0 0.35rem
+
+        border 0.2rem solid color-white
+        border-radius big-border-radius
+
+        position relative
+        
+        &.selected
+            border 0.2rem solid color-green
+            &::after
+                content ''
+                display block
+                position absolute
+                left 0 
+                right 0
+                bottom 0
+                top 0
+                margin auto
+
+                width 0.4rem
+                height 0.4rem
+
+                border 0.2rem solid color-green
+                border-radius big-border-radius
+
 /*-------------------------------
 ------------ HEADER -------------
 -------------------------------*/
@@ -192,35 +224,7 @@ header
                 background-image url(/app/images/industry/technology.png)
             &.banking
                 background-image url(/app/images/industry/banking.png)
-    nav
-        text-align center !important
-        a
-            display inline-block
-            width 1.6rem
-            height 1.6rem
-            
-            margin 0 0.35rem
 
-            border 0.2rem solid color-green
-            border-radius big-border-radius
-
-            position relative
-            
-            &::after
-                content ''
-                display block
-                position absolute
-                left 0 
-                right 0
-                bottom 0
-                top 0
-                margin auto
-
-                width 0.4rem
-                height 0.4rem
-
-                border 0.2rem solid color-green
-                border-radius big-border-radius
 
 /*-------------------------------
 ------------ ABOUT --------------
@@ -307,7 +311,9 @@ header
             padding 0
 
     h3
+        text-transform uppercase
         margin-bottom 1.4rem
+        font-size 1.7rem
 
     .left
         padding-right 0
@@ -331,3 +337,67 @@ header
 
         button
             margin 0 auto
+
+/*-------------------------------
+----------- PROJECTS ------------
+-------------------------------*/
+
+.projects
+    base-markup-for-pages(9rem,9rem)
+
+    .project-item
+        margin-top 3rem
+        margin-bottom 4.5rem
+
+        &:hover
+            background-color color-orange
+
+            h3, p
+                color color-white
+
+            .description
+                border 0.1rem solid transparent
+                
+
+        .photo
+            overflow hidden
+            height 29.5rem
+            position relative
+            background-color: black
+
+            img 
+                opacity 0.8
+                max-width 120%
+
+            .title
+                position absolute
+                top 2rem
+                left 2rem
+                min-width 11rem
+                padding 0.8rem 2.4rem
+
+                font-size 1.2rem
+                text-transform uppercase
+                color color-white
+
+                border: 0.2rem solid lighten(color-orange, 15%)
+                border-radius small-border-radius
+
+            nav 
+                position absolute
+                right 2.5rem
+                bottom 2rem
+
+        .description
+            padding 2.8rem
+
+            border 0.1rem solid #dae5e8
+
+            h3
+                font-size 2rem
+                text-transform uppercase
+                margin-bottom 1.5rem            
+            h3, p
+                text-align left 
+            
+        
