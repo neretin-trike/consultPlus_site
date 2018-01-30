@@ -16,7 +16,7 @@ body
 *:before
 *:after 
     box-sizing: inherit
-    border 0.1rem solid #a2a1bf 
+    // border 0.1rem solid #a2a1bf 
 
 button
     outline none
@@ -35,7 +35,7 @@ a
     text-decoration none
     color purple 
 
-h1, h2, h3, p, blockquote
+h1, h2, h3, p, blockquote, figure
     reset()
 
 /*-------------------------------
@@ -72,7 +72,7 @@ button
 main
     margin-top -13rem
 
-p
+p,blockquote
     text-align center
     font-family 'Domine'
     color color-lightgray
@@ -434,3 +434,67 @@ header
             margin-bottom 1rem
         p
             text-align left
+
+/*-------------------------------
+--------- TESTIMONIALS ----------
+-------------------------------*/
+
+.testimonials
+    base-markup-for-pages(9rem,8.5rem, color-blue)  
+    
+    color color-white
+
+    .grid:first-child
+        position relative
+
+        &:after
+            content ''
+            display block
+            position absolute
+            width 16.2rem
+            height 13.1rem
+
+            left 0
+            top -9rem
+
+            background-image url(/app/images/testimonials/quote.png) 
+
+    h2, h3, p, blockquote
+        text-align center
+        color color-white
+
+    .gallery
+        width 87%
+        margin 3rem auto
+
+        .photo
+            margin 0 0.5rem
+            display inline-block
+            overflow hidden
+            vertical-align middle
+
+            border-radius big-border-radius
+            width 5.6rem
+            height @width
+
+            &.selected
+                width 6.8rem
+                height @width
+
+            img 
+                max-width 100%
+
+    blockquote
+        &:after
+            content ''
+            display block
+            width 1.7rem
+            height 0.2rem
+            margin 2.5rem auto
+
+            background-color color-white
+
+    h3
+        text-transform uppercase
+        font-size 1.4rem
+        margin 1rem 0 
