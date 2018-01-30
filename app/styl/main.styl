@@ -33,7 +33,6 @@ input
 
 a
     text-decoration none
-    color purple 
 
 h1, h2, h3, p, blockquote, figure
     reset()
@@ -85,6 +84,11 @@ p,blockquote
     margin-right auto
     &__cell
         font-size 1.4rem
+
+.helper
+    display inline-block
+    width 100%
+    zoom 1
 
 .circle-switcher
     text-align center !important
@@ -139,12 +143,7 @@ header
             &.selected
                 color color-orange
 
-        .helper
-            display inline-block
-            width 100%
-            zoom 1
-
-    .contact
+    .contact-us
         height 4rem
 
         .phone
@@ -595,3 +594,78 @@ header
 
 footer
     base-markup-for-pages(9rem,5rem,color-darkgray)
+
+    color color-white
+
+    .logo
+        margin-top 9rem
+
+    h3
+        text-transform uppercase
+        font-size 2rem
+        margin-bottom 2.5rem
+
+    ul
+        reset()
+        list-style-type none
+        line-height 3rem
+        text-transform uppercase
+        font-size 1.3rem
+        
+        a
+            color color-lightgray
+
+    .news-letter
+        padding-right 0
+        p
+            text-align left
+        
+        form
+            margin-top 4rem
+            position relative
+
+            input
+                padding 1.75rem 2.6rem
+                width 100%
+                color color-white
+                text-transform uppercase
+
+                background-color #323334
+
+                border-radius small-border-radius
+            button
+                padding 1.75rem 2.6rem
+                display inline-block
+                position absolute
+                right 0
+                top 0
+
+    .bottom-bar
+        margin-top 9rem
+        border-top 0.1rem solid #323334
+        padding-top 1rem
+        
+        .copyright 
+            p
+                font-size 1.3rem
+                text-align left
+
+        .social-media
+            text-align justify
+            line-height 0
+            padding-left 6rem
+            
+            a
+                font-size 1.3rem
+                text-transform uppercase
+
+                &.Facebook
+                    color #385da5
+                &.Twitter
+                    color #00b5da
+                &.Instagram
+                    color #d4c5a8
+                &.Linkedin
+                    color #1883bb
+                &.Google
+                    color #e4463b

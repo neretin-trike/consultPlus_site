@@ -18,7 +18,7 @@
                     - else 
                         %a(href='#') #{item}
                 .helper
-            .contact(class='3/12 grid__cell')
+            .contact-us(class='3/12 grid__cell')
                 .phone +91 5685 6664 555
                 %a(href="#")
         %main
@@ -213,7 +213,7 @@
         %footer
             .grid
                 .logo(class='4/12 grid__cell')
-                    %img(src="" alt="") logo
+                    %img(src="images/logo.png" alt="")
                 .navigation(class='2/12 grid__cell')
                     %h3 Navigation
                     %ul
@@ -233,12 +233,13 @@
                     %p Enter your email address to subscribe our notification of our new post & features by email.
                     %form(action="#")
                         %input(type="text" placeholder="Email addres")/
-                        %input(type="button" value="subscribe")/
-            .grid
+                        %button Subcribe
+            .grid(class='grid--middle grid--flush bottom-bar')
                 .copyright(class='6/12 grid__cell')
                     %p Copyright © 2016 Consultplus theme.
                 .social-media(class='6/12 grid__cell')
-                    - link_array = ['Facebook', 'Twitter', 'Instagram', 'Linkedin','Google +'];
+                    - link_array = ['Facebook', 'Twitter', 'Instagram', 'Linkedin','Google'];
                     - link_array.each do |item|
                         %a(class='#{item}' href='#') #{item}
+                    .helper
         %script(src="js/bundle.js")
