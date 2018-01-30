@@ -19,13 +19,13 @@
                         %a(href='#') #{item}
                 .helper
             .contact(class='3/12 grid__cell')
-                %p +91 5685 6664 555
+                .phone +91 5685 6664 555
                 %a(href="#")
         %main
             %section.home
                 .grid(class='grid--center grid--flush')
                     %article(class='8/12 grid__cell')
-                        %p We are leading consulting company
+                        .slogan We are leading consulting company
                         %h1 Choose your industry
                 .grid(class='grid--flush')
                     :ruby
@@ -39,7 +39,7 @@
                         %div(class='3/12 grid__cell')
                             .industry-item
                                 .icon(class="#{item['icon']}")
-                                %p #{item['header']}
+                                .title #{item['header']}
                 .grid(class='grid--center')
                     %nav(class='2/12 grid__cell')
                         %a(href="#")
@@ -51,16 +51,19 @@
                         %h2 About us
                         %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
                         %button Read more
-                .grid
-                    .sponsors(class='grid__cell')
-                        %button(class='round left') left
+                .grid(class='grid--center grid--middle')
+                    %button(class='1/12 grid__cell arrow left')
+                    .sponsors(class='10/12 grid__cell')
                         - sponsor_array = ['codecanyon', 'videohive', 'audiojungle', 'graphicriver','photodune'];
                         - sponsor_array.each_with_index do |item, index|
                             - if index == 0
-                                %a.sponsor-item(href='#' class='selected') #{item}
+                                %a.sponsor-item(href='#' class='selected')
+                                    %img(src="images/sponsors/logo_#{index+1}.png" alt="")/
                             - else 
-                                %a.sponsor-item(href='#') #{item}
-                        %button(class='round right') right
+                                %a.sponsor-item(href='#')
+                                    %img(src="images/sponsors/logo_#{index+1}.png" alt="")/
+                                
+                    %button(class='1/12 grid__cell arrow right') 
             %section.features
                 .grid(class='grid--center')
                     %article(class='8/12 grid__cell')
