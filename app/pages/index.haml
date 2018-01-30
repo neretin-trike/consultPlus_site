@@ -5,16 +5,229 @@
         %meta(content='wclassth=device-wclassth, initial-scale=1.0')
         %meta(http-equiv='X-UA-Compatible' content='ie=edge')
         %link(rel="stylesheet" href="css/avalanche.css")/
-        %title Landr Site
+        %title Consult Plus Site
     %body
-        %header
-            .grid
-                %div(class='1/2 grid__cell') 
-                    %div 1/2
-                %div(class='1/2 grid__cell') 
-                    %div 1/2
-                %h2.grid__cell Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                %img(src="images/logo.png" alt="")/
+        %header.grid
+            .logo(class='2/12 grid__cell')
+                %img(src="" alt="") logo
+            %nav.menu(class='7/12 grid__cell')
+                - menu_array = ['Home', 'About Us', 'Industry', 'Services','Pages','Contact us'];
+                - menu_array.each_with_index do |item, index|
+                    - if index == 0
+                        %a(href='#' class='selected') #{item}
+                    - else 
+                        %a(href='#') #{item}
+            .contact(class='3/12 grid__cell')
+                %p +91 5685 6664 555
+                %a(href="#") home
         %main
+            %section.home
+                .grid(class='grid--center')
+                    %article(class='6/12 grid__cell')
+                        %p We are leading consulting company
+                        %h1 Choose your industry
+                .grid
+                    :ruby
+                        industry_item = [
+                            {'icon' => 'education', 'header' => 'education'},
+                            {'icon' => 'business', 'header' => 'business'},
+                            {'icon' => 'technology', 'header' => 'technology'},
+                            {'icon' => 'banking', 'header' => 'banking'}
+                        ]
+                    - industry_item.each do |item|
+                        .industry-item(class='3/12 grid__cell')
+                            .icon(class="#{item['icon']}") icon
+                            %p #{item['header']}
+                .grid(class='grid--center')
+                    %nav(class='2/12 grid__cell')
+                        %a(href="#")1
+                        %a(href="#")2
+                        %a(href="#")3
+            %section.about
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 About us
+                        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                        %button Read more
+                .grid
+                    .sponsors(class='grid__cell')
+                        %button(class='round left') left
+                        - sponsor_array = ['codecanyon', 'videohive', 'audiojungle', 'graphicriver','photodune'];
+                        - sponsor_array.each_with_index do |item, index|
+                            - if index == 0
+                                %a.sponsor-item(href='#' class='selected') #{item}
+                            - else 
+                                %a.sponsor-item(href='#') #{item}
+                        %button(class='round right') right
+            %section.features
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 Our features
+                .grid
+                    %div(class='5/12 grid__cell')
+                        .grid.feature-item
+                            .description(class='9/12 grid__cell')
+                                %h3 24 hour support
+                                %p containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+                            .icon.support(class='3/12 grid__cell') support
+                        .grid.feature-item
+                            .description(class='9/12 grid__cell')
+                                %h3 Full security
+                                %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            .icon.security(class='3/12 grid__cell') security
+                    %div(class='2/12 grid__cell')
+                        %img(src="" alt="") image
+                    %div(class='5/12 grid__cell')
+                        .grid.feature-item
+                            .icon.boosting(class='3/12 grid__cell') boosting
+                            .description(class='9/12 grid__cell')
+                                %h3 Business boosting
+                                %p established fact that a reader will be distracted by the readable content of a page when looking
+                        .grid.feature-item
+                            .icon.process(class='3/12 grid__cell') process
+                            .description(class='9/12 grid__cell')
+                                %h3 Creative process
+                                %p There are many variations of passages of Ipsum avail able, but the majority have suffered alteration.
+                .grid.boost(class='grid--middle')
+                    %div(class='9/12 grid__cell') 
+                        %p If you want to boost your business Contact us
+                    %div(class='3/12 grid__cell') 
+                        %button Boost your business
+            %section.projects
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 Projects
+                .grid
+                    %article(class='4/12 grid__cell')
+                        .project-item.banking 
+                            .photo
+                                %img(src="" alt="")
+                            .description
+                                %h3 Project Heading 
+                                %p Popularised in the 1960s with the release Letraset sheets containing Lorem. 
+                    %article(class='8/12 grid__cell')
+                        .project-item.realstate 
+                            .photo
+                                %img(src="" alt="")
+                                %nav
+                                    %a(href="#")1
+                                    %a(href="#")2
+                                    %a(href="#")3
+                            .description
+                                %h3 Project Heading
+                                %p Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages. fact that a reader will be distracted by the readable of a page when.     
+                .grid(class='grid--center')
+                    %div(class='3/12 grid__cell')
+                        %button Full projects 
+            %section.services
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 Services
+                .grid
+                    %article.service-item(class='4/12 grid__cell')
+                        .icon.business
+                        %h3 business consultation
+                        %p Many variations of passages of Lorem available, but the majority have suffered alteration in some form, by injected humour
+                    %article.service-item(class='4/12 grid__cell')
+                        .icon.business
+                        %h3 boost local business
+                        %p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.
+                    %article.service-item(class='4/12 grid__cell')
+                        .icon.accounting
+                        %h3 accounting
+                        %p professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                .grid(class='grid--center')
+                    %div(class='3/12 grid__cell')
+                        %button Full services 
+            %section.testimonials
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 Testimonials
+                .grid(class='grid--center')
+                    %div(class='3/12 grid__cell')
+                        %figure.photo
+                            %img(src="#" alt="") photo_1
+                        %figure.photo.selected
+                            %img(src="#" alt="") photo_2
+                        %figure.photo
+                            %img(src="#" alt="") photo_3
+                    %div(class='10/12 grid__cell')
+                        %blockquote
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type speci book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                        %h3 Client Name
+                        %p Designation
+            %section.blog
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 Our blog
+                .grid(class='grid--flush')
+                    %div(class='6/12 grid__cell')
+                        .blog-item
+                            .grid
+                                .photo(class='4/12 grid__cell')
+                                    %img(src="" alt="") photo
+                                .description(class='8/12 grid__cell')
+                                    %time February 22, 2016 
+                                    %h3 Blog Heading here
+                                    %p Established fact that a reader will be distracted by the readable of a page when looking at its layout...
+                    %div(class='6/12 grid__cell')
+                        .blog-item
+                            .description(class='grid__cell')
+                                %time February 22, 2016 
+                                %h3 Blog Heading here
+                                %p Popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages. fact that a reader will be distracted by the readable of a page when...
+            %section.contact
+                .grid(class='grid--center')
+                    %article(class='8/12 grid__cell')
+                        %h2 Quick contact
+                .grid
+                    %div(class='4/12 grid__cell')
+                        .grid.contact-item
+                            .icon.email(class='3/12 grid__cell') email
+                            .info(class='9/12 grid__cell')
+                                %h3 Email
+                                %p info@consultplus.com
+                    %div(class='4/12 grid__cell')
+                        .grid.contact-item
+                            .icon.call(class='3/12 grid__cell') Call us
+                            .info(class='9/12 grid__cell')
+                                %h3 Call us
+                                %p +91 8879 8767 990
+                    %div(class='4/12 grid__cell')
+                        .grid.contact-item
+                            .icon.career(class='3/12 grid__cell') Career
+                            .info(class='9/12 grid__cell')
+                                %h3 Career
+                                %p consult@career.com
         %footer
+            .grid
+                .logo(class='4/12 grid__cell')
+                    %img(src="" alt="") logo
+                .navigation(class='2/12 grid__cell')
+                    %h3 Navigation
+                    %ul
+                        - nav_array = ['Home', 'About Us', 'Industry', 'Services','Pages','Contact us'];
+                        - nav_array.each do |item|
+                            %li
+                                %a(href='#') #{item}
+                .navigation(class='2/12 grid__cell')
+                    %h3 Industry
+                    %ul
+                        - indust_array = ['Education', 'Business', 'Realestate', 'Technology','Banking','Communication','Much more'];
+                        - indust_array.each do |item|
+                            %li
+                                %a(href='#') #{item}
+                .news-letter(class='4/12 grid__cell')
+                    %h3 News letter
+                    %p Enter your email address to subscribe our notification of our new post & features by email.
+                    %form(action="#")
+                        %input(type="text" placeholder="Email addres")/
+                        %input(type="button" value="subscribe")/
+        .grid
+            .copyright(class='6/12 grid__cell')
+                %p Copyright © 2016 Consultplus theme.
+            .social-media(class='6/12 grid__cell')
+                - link_array = ['Facebook', 'Twitter', 'Instagram', 'Linkedin','Google +'];
+                - link_array.each do |item|
+                    %a(class='#{item}' href='#') #{item}
         %script(src="js/bundle.js")
